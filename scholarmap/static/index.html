@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="ScholarMap — query-conditioned scholarly discovery and research landscape ranking.">
+  <title>ScholarMap — Map a research field</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<main>
+  <header>
+    <div class="eyebrow">OPEN-SOURCE SCHOLARLY DISCOVERY</div>
+    <h1>ScholarMap</h1>
+    <p>Map a research field. Find what actually matters.</p>
+  </header>
+
+  <section class="searchbox">
+    <label>Research topic
+      <input id="topic" value="continual learning for large language models" autocomplete="off">
+    </label>
+    <div class="row">
+      <label>From<input id="from" type="month" value="2025-01"></label>
+      <label>To<input id="to" type="month" value="2026-07"></label>
+      <label>Sort
+        <select id="sort">
+          <option value="recommended">Recommended</option>
+          <option value="citations">Citations</option>
+          <option value="date">Newest</option>
+          <option value="relevance">Relevance</option>
+        </select>
+      </label>
+    </div>
+    <div class="checks" id="checks"></div>
+    <div class="row">
+      <label>Papers / section<input id="count" type="number" min="1" max="50" value="6"></label>
+      <label class="toggle"><input id="live" type="checkbox"> Live public APIs</label>
+      <button id="search" type="button">Build landscape</button>
+    </div>
+  </section>
+
+  <div id="status"></div>
+  <div id="results"></div>
+</main>
+
+<div id="authorOverlay" class="overlay" aria-hidden="true">
+  <aside class="author-panel" role="dialog" aria-modal="true" aria-labelledby="authorTitle">
+    <button id="closeAuthor" class="close-button" type="button" aria-label="Close author view">×</button>
+    <div class="eyebrow">AUTHOR EXPLORER</div>
+    <h2 id="authorTitle">Author</h2>
+    <p id="authorSubtitle" class="panel-subtitle"></p>
+    <div id="authorStatus"></div>
+    <div id="authorPapers"></div>
+  </aside>
+</div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>
