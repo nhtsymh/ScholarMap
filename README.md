@@ -648,3 +648,4 @@ ScholarMap is released under the **MIT License**. See [`LICENSE`](LICENSE).
   <strong>ScholarMap</strong><br>
   <em>Map a research field. Find what actually matters.</em>
 </p>
+
