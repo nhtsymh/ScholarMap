@@ -1,6 +1,5 @@
 # Contributing to ScholarMap
 
-Thank you for improving ScholarMap.
 
 ## Development setup
 
