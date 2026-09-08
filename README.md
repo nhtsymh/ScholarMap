@@ -126,15 +126,15 @@ AgendaRank
 
 A simplified formulation is:
 
-\[
+$$
 A(p \mid q)
 =
-\alpha S_{text}(p,q)
+\alpha S_{\mathrm{text}}(p,q)
 +
-\beta S_{agenda}(p,q)
+\beta S_{\mathrm{agenda}}(p,q)
 +
-\gamma S_{graph}(p,q)
-\]
+\gamma S_{\mathrm{graph}}(p,q)
+$$
 
 where the three terms represent textual relevance, research-community alignment, and local graph structure.
 
@@ -146,14 +146,14 @@ The goal is to distinguish papers that merely **share vocabulary** from papers t
 
 **LabRank** estimates institutional research strength for the specific topic being searched.
 
-For an institution \(L\), query \(q\), and search-window start time \(t\):
+For an institution $L$, query $q$, and search-window start time $t$:
 
-\[
-LabRank(L \mid q,t)
+$$
+\operatorname{LabRank}(L \mid q,t)
 =
-\sum_{p \in P_L,\;time(p)<t}
+\sum_{p \in P_L,\;\operatorname{time}(p)<t}
 R(p \mid q)\,I(p)\,V(p)\,D(p,t)
-\]
+$$
 
 The central constraint is temporal:
 
@@ -188,9 +188,9 @@ It combines:
 
 A simplified formulation is:
 
-\[
+$$
 F(p \mid q)=C_q(p)\,B(p)\,I(p)
-\]
+$$
 
 Conceptually:
 
@@ -643,18 +643,6 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md) for the development workflow.
 ScholarMap is released under the **MIT License**. See [`LICENSE`](LICENSE).
 
 ---
-
-# Citation
-
-If ScholarMap is useful in research, teaching, or software development, you can cite the project as:
-
-```bibtex
-@software{scholarmap2026,
-  title  = {ScholarMap: Query-Conditioned Scholarly Discovery and Research Landscape Ranking System},
-  year   = {2026},
-  note   = {Open-source scholarly discovery and ranking system}
-}
-```
 
 <p align="center">
   <strong>ScholarMap</strong><br>
