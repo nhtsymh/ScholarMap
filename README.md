@@ -519,12 +519,6 @@ financial-news-rag-graduation-project/
 
 ---
 
-## Limitations
-
-- Scanned image-only PDFs require OCR before indexing.
-- The offline hash embedder is designed for deterministic demonstration and has lower semantic quality than a trained embedding model.
-- The built-in extractive generator cannot match the reasoning or language quality of a capable language model.
----
 
 ## Responsible Use
 
