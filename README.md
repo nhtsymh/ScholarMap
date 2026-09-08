@@ -140,7 +140,8 @@ The goal is to distinguish papers that merely **share vocabulary** from papers t
 
 For an institution $L$, query $q$, and search-window start time $t$:
 
-$\operatorname{LabRank}(L \mid q,t)=\sum_{p \in P_L,\;\operatorname{time}(p)<t}R(p \mid q)\,I(p)\,V(p)\,D(p,t)$
+$\mathrm{LabRank}(L \mid q,t)=\sum_{p \in P_L,\;\mathrm{time}(p)<t}R(p \mid q)\,I(p)\,V(p)\,D(p,t)$
+
 
 The central constraint is temporal:
 
